@@ -54,6 +54,23 @@
       font-size: 0.85em;
       opacity: 0.8;
     }
+      .logo-fixed {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      width: 80px;
+      max-width: 20vw;
+      z-index: 1000;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      .logo-fixed {
+        width: 60px;
+        bottom: 10px;
+        right: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -62,7 +79,7 @@
     <p>Sube aquí tus fotos de la fiesta de fin de año para que todos podamos recordarla.</p>
 
     <!-- REEMPLAZA EL LINK DE ABAJO POR TU ENLACE DE GOOGLE DRIVE (Solicitud de archivos) -->
-    <a class="upload-btn" href="https://drive.google.com/drive/folders/1b0nnXabNqajEwknXdMltwuuHxd_oxvJ-?usp=sharing" target="_blank">
+    <a class="upload-btn" href="https://drive.google.com/drive/folders/1A7ZoRMJSODgEdVjJr0YFN-7RRysmfKJK?usp=drive_link" target="_blank">
       📸 Subir mis fotos
     </a>
 
@@ -71,5 +88,7 @@
       Gracias por compartir ✨
     </footer>
   </div>
+  <!-- LOGO FIJO EN ESQUINA INFERIOR DERECHA -->
+  <img src="logo.png" alt="Logo" class="logo-fixed" />
 </body>
 </html>
